@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-script: 'Alex Brush', cursive;
+
+  --color-ivory: #F8F5EF;
+  --color-burgundy: #5A0F18;
+  --color-wine: #32070C;
+  --color-gold: #C6A15B;
+  --color-gold-soft: #E1C98A;
+  --color-charcoal: #171717;
+  --color-rose-glow: #8B1E2F;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #F8F5EF;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #F8F5EF;
+  color: #171717;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F5EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #5A0F1833;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5A0F1877;
+}
+
+/* Custom selection */
+::selection {
+  background-color: #5A0F18;
+  color: #F8F5EF;
+}
+
+/* Font helpers */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+.font-code {
+  font-family: var(--font-mono);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Luxury hairline borders and glass */
+.border-gold-hairline {
+  border-color: rgba(198, 161, 91, 0.3);
+}
+
+.border-burgundy-hairline {
+  border-color: rgba(90, 15, 24, 0.2);
+}
+
+.glass-ivory {
+  background: rgba(248, 245, 239, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-dark {
+  background: rgba(50, 7, 12, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Romantic Ambient Glows */
+.glow-gold {
+  box-shadow: 0 0 35px -5px rgba(198, 161, 91, 0.25);
+}
+
+.glow-burgundy {
+  box-shadow: 0 0 45px -8px rgba(90, 15, 24, 0.35);
+}
+
+.glow-rose {
+  box-shadow: 0 0 40px -5px rgba(139, 30, 47, 0.3);
+}
+
+/* Keyframes for romantic shimmer */
+@keyframes romanticPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.04);
+  }
+}
+
+.animate-romantic-pulse {
+  animation: romanticPulse 4s infinite ease-in-out;
+}

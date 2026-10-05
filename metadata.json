@@ -1,0 +1,6 @@
+{
+  "name": "A Letter to Rayan",
+  "description": "A modern, luxury digital letter and supportive experience dedicated to Rayan, created by Ali.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
